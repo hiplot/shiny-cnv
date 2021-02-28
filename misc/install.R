@@ -1,4 +1,1 @@
-list.of.packages = c("shiny", "magrittr", "scales", "dplyr", "data.table", "DT", "readr")
-new.packages = list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages))
-  install.packages(new.packages)
+pacman::p_load(c("shiny", "magrittr", "scales", "dplyr", "data.table", "DT", "readr"), character.only = T)
